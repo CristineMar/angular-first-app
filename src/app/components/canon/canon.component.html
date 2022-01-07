@@ -1,0 +1,21 @@
+<div class="container" fxLayout="row wrap" fxLayoutAlign="space-evenly stretch" fxLayoutGap="15px">
+
+  <mat-card fxFlex="0 1 calc(30% - 30px)" *ngFor="let camera of canon" class="product" fxLayout="column">
+    <img class="image" mat-card-image [src]="camera.img" alt="Photo of {{camera.nombre}}">
+    <mat-card-title>{{camera.nombre}}</mat-card-title>
+    <mat-card-subtitle>{{camera.marca}}</mat-card-subtitle>
+    <mat-card-content fxFlex fxFlexAlign="start" align="start">
+      <p>
+        {{camera.bio}}
+      </p>
+
+    </mat-card-content>
+    <mat-card-actions>
+      <mat-divider inset></mat-divider>
+      <p fxFlexAlign="start" align="start">{{camera.precio}}</p>
+      <button mat-raised-button color="primary" style="width: 100%; margin: 0;">
+        VER
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</div>

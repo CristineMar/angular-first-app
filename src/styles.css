@@ -1,0 +1,21 @@
+
+
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; overflow: hidden;}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: #ffeb3b73;}
+
+.mat-toolbar.mat-primary {
+    background: #000000;
+    color: #fff;
+}
+
+.mat-flat-button.mat-primary, .mat-raised-button.mat-primary, .mat-fab.mat-primary, .mat-mini-fab.mat-primary {
+    background-color: transparent;
+    color: #000000;
+}
+
+.mat-flat-button.mat-primary:hover, .mat-raised-button.mat-primary:hover, .mat-fab.mat-primary:hover, .mat-mini-fab.mat-primary:hover{
+    background-color: #090808;
+    color: white;
+}
